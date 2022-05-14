@@ -1,0 +1,8 @@
+#!/bin/bash
+s=4
+if [ $s / 2 ];
+then
+echo "It is not divisible by 2"
+else
+echo "It is divisible by 2"
+fi
