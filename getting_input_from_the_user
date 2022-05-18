@@ -1,0 +1,11 @@
+getting a value from the user for the variable
+
+#! /bin/bash
+
+echo "Hello $1"
+
+
+
+
+
+when running the bash file put a value for the variable $1
