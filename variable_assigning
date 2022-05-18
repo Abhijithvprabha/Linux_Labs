@@ -1,0 +1,6 @@
+! /bin/bash
+
+FIRST_NAME=Bob
+FAV_COLOR=red
+
+echo Hi $FIRST_NAME , How are you ? Your fav color is $FAV_COLOR
