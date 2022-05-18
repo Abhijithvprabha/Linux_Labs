@@ -1,0 +1,28 @@
+1. create a script
+2. make it executable
+3. accept two parameters , a name and fav sport
+4. Display any sentence to the screen using the inp
+
+
+answer
+
+#! /bin/bash
+
+NAME=$1
+FAV_SPORT=$2
+echo "Hello $1 , your fav sport is $2"
+
+
+
+running
+
+chmod 755 sports.sh
+./sports.sh Abhi football
+
+
+output 
+
+
+
+[abhi@fedora bash_scripts]$ ./sports.sh Abhi circkter
+Hello Abhi , your fav sport is circkter
