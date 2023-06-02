@@ -1,0 +1,8 @@
+#! /bin/bash
+
+echo "/nEnter the path to the directory you want to list: "
+read filepath
+echo " the files are "
+ls $filepath
+
+
