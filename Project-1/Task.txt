@@ -1,8 +1,0 @@
-Project: AutomatedUser Account Creation Script for Linux Servers
-
-
-As Linux System Administrators, we are working for a fast-growing company that requires us to build and deploy numerous servers.
-Unfortunately, we are falling behind schedule due to constant interruptions from the help desk, which calls us to create new Linux accounts for users testing the company's latest Linux-based application.
-To meet our deadline and maintain our sanity, we have collectively decided to develop a shell script that automates the user account creation process.
-Once the script is complete, we can delegate the task of creating new accounts to the help desk, allowing us to work uninterrupted and complete our server deployments on time.
-
