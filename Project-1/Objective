@@ -5,30 +5,13 @@ As Linux System Administrators, we are working for a fast-growing company that r
 Objective:
 Our objective is to create a shell script that automates the process of creating new user accounts on Linux servers. The script will prompt the help desk for necessary information and generate user accounts with the appropriate permissions.
 
-Requirements:
+As a team, we have discussed the necessary functionality and operation of the shell script. Based on our discussions, we have come up with the following requirements:
 
-    The script should prompt the help desk for the following information:
-        Username: The desired username for the new user account.
-        Full Name: The full name of the user.
-        Password: A secure password for the account.
-        Group: The primary group for the user.
-        Additional Groups: Any additional groups the user should belong to (optional).
+The script:
 
-    The script should validate the input and ensure that:
-        The username is unique and not already taken.
-        The password meets security requirements (e.g., minimum length, complexity).
-        The primary group and additional groups exist on the system.
-
-    Upon successful validation, the script should:
-        Create a new user account with the provided information.
-        Set the user's password.
-        Assign the user to the specified primary group and additional groups (if any).
-        Optionally, create a home directory for the user.
-
-    The script should provide appropriate feedback to the help desk, indicating whether the user account creation was successful or if there were any errors.
-
-    Ensure the script is executable and can be run from the command line.
-
-    Let's implement error handling and informative error messages to assist troubleshooting if any issues arise during account creation.
-
-    We will document the usage instructions within the script or in a separate README file.
+    Shall be named "add-local-user.sh".
+    Must enforce execution with superuser (root) privileges. If the script is not executed with superuser privileges, it should not attempt to create a user and return an exit status of 1.
+    Shall prompt the person executing the script to enter the username (login), the name of the person who will be using the account, and the initial password for the account.
+    Should create a new user on the local system using the information provided by the user.
+    Must inform the user if the account creation fails for any reason. In case of failure, the script should return an exit status of 1.
+    Should display the username, password, and host where the account was created. This information will allow the help desk staff to easily copy the details for further communication.
