@@ -1,0 +1,34 @@
+Project: Automated User Account Creation Script for Linux Servers
+
+As Linux System Administrators, we are working for a fast-growing company that requires us to build and deploy numerous servers. Unfortunately, we are falling behind schedule due to constant interruptions from the help desk, which calls us to create new Linux accounts for users testing the company's latest Linux-based application. To meet our deadline and maintain our sanity, we have collectively decided to develop a shell script that automates the user account creation process. Once the script is complete, we can delegate the task of creating new accounts to the help desk, allowing us to work uninterrupted and complete our server deployments on time.
+
+Objective:
+Our objective is to create a shell script that automates the process of creating new user accounts on Linux servers. The script will prompt the help desk for necessary information and generate user accounts with the appropriate permissions.
+
+Requirements:
+
+    The script should prompt the help desk for the following information:
+        Username: The desired username for the new user account.
+        Full Name: The full name of the user.
+        Password: A secure password for the account.
+        Group: The primary group for the user.
+        Additional Groups: Any additional groups the user should belong to (optional).
+
+    The script should validate the input and ensure that:
+        The username is unique and not already taken.
+        The password meets security requirements (e.g., minimum length, complexity).
+        The primary group and additional groups exist on the system.
+
+    Upon successful validation, the script should:
+        Create a new user account with the provided information.
+        Set the user's password.
+        Assign the user to the specified primary group and additional groups (if any).
+        Optionally, create a home directory for the user.
+
+    The script should provide appropriate feedback to the help desk, indicating whether the user account creation was successful or if there were any errors.
+
+    Ensure the script is executable and can be run from the command line.
+
+    Let's implement error handling and informative error messages to assist troubleshooting if any issues arise during account creation.
+
+    We will document the usage instructions within the script or in a separate README file.
