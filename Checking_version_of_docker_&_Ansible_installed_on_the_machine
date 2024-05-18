@@ -1,0 +1,22 @@
+#! /bin/bash
+
+echo
+
+echo " Checking the versions of Docker and Ansible installed on this machine"
+
+echo
+
+x=$(docker --version| awk '{print $3}' | sed 's/,//')
+y=$(ansible --version | awk 'NR==1 {print $2}')
+
+
+
+echo "------------------------"
+echo "| ToolName  | Version  |"
+echo "------------------------"
+echo "| Docker    | ${x}   |"
+echo "| Ansible   | ${y}   |"
+echo "------------------------"
+
+echo
+
